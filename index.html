@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'>
+		</script>
+
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script src="https://apis.google.com/js/client:plusone.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.1.0/annyang.min.js"> </script>
+		<script type='text/javascript' src="search.js"> </script>
+		
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>
+			Voice - Controlled Music Player
+		</title>
+	</head>
+
+	<body>
+		<h1>
+			Voice - Controlled Music Player <br>
+			Control music with your <i> voice! </i>
+		</h1>
+		 
+		<div align = "center">
+		<h2>
+			Instructions: <br>
+			To Play a Song - say "PLAY (song-name) and/or (artist name)." <br>
+			eg. "play billie jean / play Michael Jackson" <br> 
+			OR <br> 
+			"PLAY billie jean michael jackson" <br> <br>
+			To Pause - say "STOP."
+			<br>
+			Navigate videos with "NEXT" and "BACK".
+			<br>
+			"RESUME" to continue playing.
+		</h2>
+		</div>
+
+		<br>
+
+		<div id="search-div">
+			<center>Or you can search for a channel. <br>
+      		<span>Song Name:  </span><input id="songName" type="text"/> 
+      		<span>Artist Name: </span> <input id="songArtist" type="text"/>  <br>
+      		<button id="searchButton" onClick='search()'> SEARCH </button> </center>
+      		<br>
+    	</div>
+
+    	<center>
+    	<div id="player" align = "center">
+    	</div>
+    	</center>
+    	<br>
+    	
+    	<div id = "speech" align = "center">
+    	
+    	</div>
+	</body>
+</html>
